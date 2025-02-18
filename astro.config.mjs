@@ -12,6 +12,7 @@ import zeabur from '@zeabur/astro-adapter/serverless';
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(),react()],
+  output:'server',
   adapter:zeabur(),
  image:{
   service:imageService({})
